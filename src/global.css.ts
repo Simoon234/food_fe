@@ -92,7 +92,6 @@ export default createGlobalStyle`
     vertical-align: baseline;
     font-family: "Catamaran", sans-serif;
   }
-  /* HTML5 display-role reset for older browsers */
   article,
   aside,
   details,
@@ -134,17 +133,21 @@ export default createGlobalStyle`
   ::-webkit-scrollbar-track {
     background-color: ${(props: any) => props.theme.colors.background};
   }
+
   ::-webkit-scrollbar {
     width: 12px;
     background-color: ${(props: any) => props.theme.colors.background};
   }
+
   ::-webkit-scrollbar-thumb {
     background-color: ${(props: any) => props.theme.colors.red};
   }
+
   body {
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.lightGray};
-    font-size: ${(props) => props.theme.fontSize.sm};
+    font-size: ${(props) => props.theme.fontSize.base};
+    font-family: 'Poppins', sans-serif;
     width: 100%;
   }
 `;
