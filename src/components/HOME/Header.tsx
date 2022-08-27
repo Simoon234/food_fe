@@ -9,7 +9,7 @@ export const HeaderComponent = () => {
     let user = false;
     return (
         <Header>
-            <Link to='/'><h2>FOOD</h2></Link>
+            <Link to='/'><h2>FooD</h2></Link>
             <div className='links'>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/about-us'>About us</NavLink>
@@ -61,10 +61,11 @@ export const Header = styled.header`
         position: absolute;
         content: "";
         display: block;
-        width: 15px;
-        height: 2px;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
         bottom: 5px;
-        left: 30px;
+        left: 50%;
         background-color: #000000;
       }
     }
