@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import logo from '../assets/images/home.svg';
-import {HeaderComponent} from "../components/HOME/Header";
-import {LandingPage} from "../components/HOME/LandingPage";
+import {HeaderComponent} from "../components/homePage/Header";
+import {LandingPage} from "../components/homePage/LandingPage";
 
 export const Home = () => {
     return (
