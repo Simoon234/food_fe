@@ -147,7 +147,6 @@ export default createGlobalStyle`
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.lightGray};
     font-size: ${(props) => props.theme.fontSize.base};
-    font-family: 'Poppins', sans-serif;
     width: 100%;
   }
 `;

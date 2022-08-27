@@ -4,7 +4,7 @@ import {ReactNode} from 'react';
 const theme = {
     colors: {
         black: '#1E1E1F',
-        red: '#58d434',
+        red: '#f09c0d',
         blue: '#0B8BD4',
         background: '#f4f4f1',
         darkGray: '#292A2B',

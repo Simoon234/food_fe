@@ -1,16 +1,15 @@
 import styled from "styled-components";
 import logo from '../assets/images/home.svg';
+import {HeaderComponent} from "../components/HOME/Header";
 
 export const Home = () => {
     return (
         <>
             <BackgroundImage>
-                <div className='spacer layer'></div>
+                <div className='bg layer'></div>
             </BackgroundImage>
             <LandingPageContainer>
-                <header>
-                    <h1>Logo</h1>
-                </header>
+                <HeaderComponent/>
             </LandingPageContainer>
         </>
 
@@ -18,12 +17,12 @@ export const Home = () => {
 }
 
 export const BackgroundImage = styled.div`
-  .spacer {
+  .bg {
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
-    aspect-ratio: 960/420;  
+    aspect-ratio: 960/420;
     min-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,18 +32,10 @@ export const BackgroundImage = styled.div`
   
   .layer {
     background-image: url(${logo});
-    fill: red;
   }
 `
 
 export const LandingPageContainer = styled.div`
   height: 100vh;
-
-  header {
-    position: absolute;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  max-width: 100%;
 `

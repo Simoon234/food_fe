@@ -14,7 +14,8 @@ function App() {
 }
 
 const Container = styled.div`
-  max-width: 1120px;
+  width: 80%;
+  max-width: 1170px;
   margin: 0 auto;
 
   @media only screen and (max-width: 1300px) {
