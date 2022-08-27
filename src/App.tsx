@@ -19,7 +19,7 @@ const Container = styled.div`
   margin: 0 auto;
 
   @media only screen and (max-width: 1300px) {
-    width: 100%;
+    width: 90%;
   }
   @media only screen and (min-width: 2000px) {
     width: 1600px;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import logo from '../assets/images/home.svg';
 import {HeaderComponent} from "../components/HOME/Header";
+import {LandingPage} from "../components/HOME/LandingPage";
 
 export const Home = () => {
     return (
@@ -10,6 +11,7 @@ export const Home = () => {
             </BackgroundImage>
             <LandingPageContainer>
                 <HeaderComponent/>
+                <LandingPage/>
             </LandingPageContainer>
         </>
 
