@@ -27,13 +27,12 @@ export const HeaderComponent = () => {
 }
 
 export const Header = styled.header`
-  position: sticky;
-  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 10vh;
   color: ${(props) => props.theme.colors.background};
+  z-index: 1000;
 
   h2 {
     font-size: ${(props) => props.theme.fontSize.lg};
