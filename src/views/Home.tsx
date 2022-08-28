@@ -4,6 +4,7 @@ import {HeaderComponent} from "../components/homePage/Header";
 import {LandingPage} from "../components/homePage/LandingPage";
 import {SectionLayout} from "../components/common/Section";
 import {About} from "../components/about/About";
+import {Menu} from "../components/menu/Menu";
 
 export const Home = () => {
     return (
@@ -17,6 +18,9 @@ export const Home = () => {
             </LandingPageContainer>
             <SectionLayout>
                 <About/>
+            </SectionLayout>
+            <SectionLayout>
+                <Menu/>
             </SectionLayout>
         </>
 

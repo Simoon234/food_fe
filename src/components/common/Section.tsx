@@ -15,5 +15,6 @@ export const SectionLayout = ({children}: Props) => {
 
 
 export const Section = styled.div`
-  min-height: 90vh;
+  height: 90vh;
+  padding-top: 2rem;
 `

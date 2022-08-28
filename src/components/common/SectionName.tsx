@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
-export const SectionName = ({text}: { text: string }) => {
+export const SectionName = ({text, title, description}: { text: string, title: string, description: string }) => {
     return (
-        <Span>
+        <Common>
             <span>{text}</span>
-        </Span>
+            <h3>{title}</h3>
+            <p className='about-text'>{description}</p>
+        </Common>
     )
 }
 
-export const Span = styled.span`
+export const Common = styled.span`
+  position: relative;
+
   span {
     color: #FC915F;
 
@@ -20,7 +24,22 @@ export const Span = styled.span`
       width: 80px;
       height: 2px;
       display: block;
-      background: #FC915F;
+      background: #ff7232;
     }
+  }
+
+  h3 {
+    width: 70%;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin: 1.3rem 0 3rem 0;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    max-width: 700px;
+    line-height: 2rem;
+    color: #807b7b;
+    text-align: justify;
   }
 `
