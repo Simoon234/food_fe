@@ -18,9 +18,6 @@ export const Home = () => {
             <SectionLayout>
                 <About/>
             </SectionLayout>
-            <SectionLayout>
-                <Menu/>
-            </SectionLayout>
         </>
 
     )
