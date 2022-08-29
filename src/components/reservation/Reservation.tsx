@@ -38,7 +38,8 @@ export const Reservation = () => {
                         </label>
                     </div>
                 </form> : <h1>Looks like you are not logged in.</h1>}
-                {user ? <button className='to-book'>To Book</button> : <button className='to-book'>Login</button>}
+                {user ? <button type='submit' className='to-book'>To Book</button> :
+                    <button type='submit' className='to-book'>Login</button>}
             </div>
         </ReservationWrapper>
     )

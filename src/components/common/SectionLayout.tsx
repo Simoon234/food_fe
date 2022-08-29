@@ -32,12 +32,12 @@ export const Common = styled.span`
     width: 70%;
     font-size: 2.2rem;
     line-height: 3rem;
-    margin: 1.3rem 0 3rem 0;
+    margin: 1.3rem 0 2rem 0;
   }
 
   .about-text {
     font-size: 1rem;
-    max-width: 700px;
+    max-width: 740px;
     line-height: 2rem;
     color: #807b7b;
     text-align: justify;
