@@ -6,6 +6,7 @@ import {SectionLayout} from "../components/common/Section";
 import {About} from "../components/about/About";
 import {Menu} from "../components/menu/Menu";
 import {Reservation} from "../components/reservation/Reservation";
+import {SpecialMenu} from "../components/special/SpecialMenu";
 
 export const Home = () => {
     return (
@@ -27,7 +28,7 @@ export const Home = () => {
                 <Reservation/>
             </SectionLayout>
             <SectionLayout>
-                <h1>Elo</h1>
+                <SpecialMenu/>
             </SectionLayout>
         </>
 
