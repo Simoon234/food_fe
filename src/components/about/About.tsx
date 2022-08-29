@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import food from '../../assets/images/food.jpg';
-import {SectionName} from "../common/SectionName";
+import {SectionLayout} from "../common/SectionLayout";
 import {AboutBg} from "../../assets/styled/AboutBg";
 
 export const About = () => {
@@ -10,11 +10,11 @@ export const About = () => {
             <AboutBg>
                 <div className='bg layer'></div>
             </AboutBg>
-            <AboutBox>
+            <AboutBox id='about-us'>
                 <div className='about-info-left'>
-                    <SectionName text='About us'
-                                 title='Let Us Tell You a Little About Ourselves'
-                                 description={`Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <SectionLayout text='About us'
+                                   title='Let Us Tell You a Little About Ourselves'
+                                   description={`Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                              Accusamus aliquam, animi assumenda autem consectetur consequatur eveniet expedita in, iusto
                              laudantium natus nesciunt omnis optio praesentium.Quas quis suscipit ullam voluptatibus. dolor sit amet, consectetur adipisicing elit.
                              Beatae cumque delectus, exercitationem illum in ipsam molestiae necessitatibus pariatur quibusdam quidem quo repellendus saepe sapiente tempora voluptates. Debitis nemo perferendis unde?`}/>

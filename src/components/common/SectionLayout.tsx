@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionName = ({text, title, description}: { text: string, title: string, description: string }) => {
+export const SectionLayout = ({text, title, description}: { text: string, title: string, description: string }) => {
     return (
         <Common>
             <span>{text}</span>

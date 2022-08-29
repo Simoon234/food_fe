@@ -1,4 +1,4 @@
-import {SectionName} from "../common/SectionName";
+import {SectionLayout} from "../common/SectionLayout";
 import styled from "styled-components";
 import menu1 from '../../assets/images/menu1.png';
 import menu2 from '../../assets/images/menu2.png';
@@ -23,7 +23,7 @@ export const Menu = () => {
 
     return (
         <>
-            <SectionName text='Menu' title='Our favorite menu' description='There is a huge selection of delicious
+            <SectionLayout text='Menu' title='Our favorite menu' description='There is a huge selection of delicious
             food on our menu, so everyone will find something to taste.'/>
             <ListOfFav>
                 <div className='meal-box'>
@@ -74,22 +74,6 @@ export const Menu = () => {
                     </div>
                     <span onClick={addToBasket} className='addToBasket'/>
                 </div>
-                <div className='meal-box'>
-                    <div className='imageBox'>
-                        <img src={menu1} alt=""/>
-                    </div>
-                    <div className='meal-details'>
-                        <h2>Berry Lettuce</h2>
-                        <div className='meal-opinions'>
-                            {fiveStars.map((item, i) =>
-                                <span key={i}>{item}</span>
-                            )}
-                            <span>(999)</span>
-                        </div>
-                        <p>$32.00</p>
-                    </div>
-                    <span onClick={addToBasket} className='addToBasket'/>
-                </div>
             </ListOfFav>
         </>
     )
@@ -101,14 +85,14 @@ export const ListOfFav = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  margin-top: 6rem;
+  margin-top: 4rem;
 
   .meal-box {
     position: relative;
     width: 320px;
     height: 150px;
     background-color: #2C373A;
-    margin: 3rem 0;
+    margin: 2rem 0 5rem 0;
     border-radius: 8px;
 
     .imageBox {

@@ -5,6 +5,7 @@ import {LandingPage} from "../components/homePage/LandingPage";
 import {SectionLayout} from "../components/common/Section";
 import {About} from "../components/about/About";
 import {Menu} from "../components/menu/Menu";
+import {Reservation} from "../components/reservation/Reservation";
 
 export const Home = () => {
     return (
@@ -22,12 +23,18 @@ export const Home = () => {
             <SectionLayout>
                 <Menu/>
             </SectionLayout>
+            <SectionLayout>
+                <Reservation/>
+            </SectionLayout>
+            <SectionLayout>
+                <h1>Elo</h1>
+            </SectionLayout>
         </>
 
     )
 }
 
 export const LandingPageContainer = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   max-width: 100%;
 `
