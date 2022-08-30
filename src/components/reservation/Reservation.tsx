@@ -3,7 +3,7 @@ import styled from "styled-components";
 import table from "../../assets/images/reservation.jpg"
 
 export const Reservation = () => {
-    let user = true;
+    let user = false;
     return (
         <ReservationWrapper>
             <div className='image-box'>

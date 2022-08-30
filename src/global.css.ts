@@ -148,6 +148,7 @@ export default createGlobalStyle`
     color: ${(props) => props.theme.colors.lightGray};
     font-size: ${(props) => props.theme.fontSize.base};
     width: 100%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
   }
 `;

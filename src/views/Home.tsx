@@ -7,6 +7,7 @@ import {About} from "../components/about/About";
 import {Menu} from "../components/menu/Menu";
 import {Reservation} from "../components/reservation/Reservation";
 import {SpecialMenu} from "../components/special/SpecialMenu";
+import {Reviews} from "../components/reviews/Reviews";
 
 export const Home = () => {
     return (
@@ -29,6 +30,9 @@ export const Home = () => {
             </SectionLayout>
             <SectionLayout>
                 <SpecialMenu/>
+            </SectionLayout>
+            <SectionLayout>
+                <Reviews/>
             </SectionLayout>
         </>
 
