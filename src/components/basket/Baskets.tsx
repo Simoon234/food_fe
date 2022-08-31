@@ -7,9 +7,9 @@ export const Baskets = () => {
     let test = false;
     return (
         <BasketsWrapper>
-            <div className='card-elements'>
+            <WrapperComponent>
                 {test ? <SingleBasket/> : <Empty/>}
-            </div>
+            </WrapperComponent>
             <aside>
                 <TotalPrice/>
             </aside>
@@ -21,10 +21,12 @@ export const BasketsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
+`
 
-  .card-elements {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+
+export const WrapperComponent = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
 `

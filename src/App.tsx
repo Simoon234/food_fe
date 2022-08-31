@@ -3,20 +3,21 @@ import styled from 'styled-components';
 import {Route, Routes} from 'react-router-dom';
 import {Memo} from "./components/notification/Notification";
 import {Home} from "./views/Home";
-import {Footer} from "./components/Footer";
-import {HeaderComponent} from "./components/homePage/Header";
 import {Basket} from "./views/basket/Cart";
+import {Layout} from "./layouts/Layout";
+import {Login} from "./views/login/Login";
 
 function App() {
     return (
         <Container>
             <Memo/>
-            <HeaderComponent/>
-            <Routes>
-                <Route path={'/'} element={<Home/>}/>
-                <Route path={'/basket'} element={<Basket/>}/>
-            </Routes>
-            <Footer/>
+            <Layout>
+                <Routes>
+                    <Route path={'/'} element={<Home/>}/>
+                    <Route path={'/basket'} element={<Basket/>}/>
+                    <Route path={'/login'} element={<Login/>}/>
+                </Routes>
+            </Layout>
         </Container>
     );
 }
