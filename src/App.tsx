@@ -1,14 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Route, Routes} from 'react-router-dom';
+import {Memo} from "./components/notification/Notification";
 import {Home} from "./views/Home";
+import {Footer} from "./components/Footer";
 
 function App() {
     return (
         <Container>
+            <Memo/>
             <Routes>
-                <Route path={'/'} element={<Home/>}></Route>
+                <Route path={'/'} element={<Home/>}/>
             </Routes>
+            <Footer/>
         </Container>
     );
 }

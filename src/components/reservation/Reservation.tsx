@@ -90,7 +90,7 @@ export const ReservationWrapper = styled.div`
 
     &:focus {
       background: #f8f2f2;
-      border: 1px solid #d97618;
+      outline: none;
     }
   }
 

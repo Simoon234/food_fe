@@ -38,7 +38,7 @@ export const ReviewBoxContainer = styled.div`
 
 export const ReviewBox = styled.div`
   width: 100%;
-  height: 220px;
+  min-height: 220px;
   background: #A69ED6;
   margin: 1rem 2rem 0 2rem;
   padding: 1rem;
