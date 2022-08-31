@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import {BackgroundImage} from "../assets/styled";
-import {HeaderComponent} from "../components/homePage/Header";
 import {LandingPage} from "../components/homePage/LandingPage";
-import {SectionLayout} from "../components/common/Section";
+import {SectionWrapper} from "../components/common/Section";
 import {About} from "../components/about/About";
 import {Menu} from "../components/menu/Menu";
 import {Reservation} from "../components/reservation/Reservation";
@@ -16,24 +15,23 @@ export const Home = () => {
                 <div className='bg layer'></div>
             </BackgroundImage>
             <LandingPageContainer>
-                <HeaderComponent/>
                 <LandingPage/>
             </LandingPageContainer>
-            <SectionLayout>
+            <SectionWrapper>
                 <About/>
-            </SectionLayout>
-            <SectionLayout>
+            </SectionWrapper>
+            <SectionWrapper>
                 <Menu/>
-            </SectionLayout>
-            <SectionLayout>
+            </SectionWrapper>
+            <SectionWrapper>
                 <Reservation/>
-            </SectionLayout>
-            <SectionLayout>
+            </SectionWrapper>
+            <SectionWrapper>
                 <SpecialMenu/>
-            </SectionLayout>
-            <SectionLayout>
+            </SectionWrapper>
+            <SectionWrapper>
                 <Reviews/>
-            </SectionLayout>
+            </SectionWrapper>
         </>
 
     )

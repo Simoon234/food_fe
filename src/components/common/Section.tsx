@@ -5,7 +5,7 @@ export interface Props {
     children: ReactNode
 }
 
-export const SectionLayout = ({children}: Props) => {
+export const SectionWrapper = ({children}: Props) => {
     return (
         <Section>
             {children}

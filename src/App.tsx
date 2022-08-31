@@ -4,13 +4,17 @@ import {Route, Routes} from 'react-router-dom';
 import {Memo} from "./components/notification/Notification";
 import {Home} from "./views/Home";
 import {Footer} from "./components/Footer";
+import {HeaderComponent} from "./components/homePage/Header";
+import {Basket} from "./views/basket/Cart";
 
 function App() {
     return (
         <Container>
             <Memo/>
+            <HeaderComponent/>
             <Routes>
                 <Route path={'/'} element={<Home/>}/>
+                <Route path={'/basket'} element={<Basket/>}/>
             </Routes>
             <Footer/>
         </Container>
