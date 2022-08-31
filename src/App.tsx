@@ -22,6 +22,9 @@ function App() {
 }
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 80%;
   max-width: 1170px;
   margin: 0 auto;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {SectionLayout} from "../../components/common/SectionLayout";
 import cart from '../../assets/images/wave-cart.svg'
 import {PathComponent} from "../../components/common/Path";
+import {Baskets} from "../../components/basket/Baskets";
 
 export const Basket = () => {
     return (
@@ -13,9 +14,7 @@ export const Basket = () => {
             <BasketWrapper>
                 <SectionLayout text='Cart' title='Shopping Cart'
                                description='We tried to provide you with the most necessary information.'/>
-                <div className=''>
-
-                </div>
+                <Baskets/>
             </BasketWrapper>
         </>
 
@@ -43,4 +42,5 @@ export const Image = styled.div`
 `
 export const BasketWrapper = styled.div`
   position: relative;
+  min-height: 100vh;
 `
