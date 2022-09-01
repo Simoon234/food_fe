@@ -12,9 +12,7 @@ export const Baskets = () => {
                 <SingleBasket/>
                 <SingleBasket/>
             </WrapperComponent>
-            <aside>
                 <TotalPrice/>
-            </aside>
         </BasketsWrapper>
     )
 }
@@ -22,6 +20,7 @@ export const Baskets = () => {
 export const BasketsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 2rem 0;
 `
 
@@ -30,5 +29,5 @@ export const WrapperComponent = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
 `

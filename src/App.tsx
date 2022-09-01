@@ -6,6 +6,7 @@ import {Home} from "./views/Home";
 import {Basket} from "./views/basket/Cart";
 import {Layout} from "./layouts/Layout";
 import {Contact} from "./views/Contact/Contact";
+import {About} from "./views/about/About";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/basket'} element={<Basket/>}/>
                     <Route path={'/contact'} element={<Contact/>}/>
+                    <Route path={'/about-us'} element={<About/>}/>
                 </Routes>
             </Layout>
         </Container>
