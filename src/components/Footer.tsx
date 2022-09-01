@@ -38,7 +38,7 @@ export const Footer = () => {
                 <div className='schedule'>
                     <h3>Schedule</h3>
                     <p>Monday - Friday</p>
-                    <p>10:00 Am - 6 Pm</p>
+                    <p>10:00 Am - 6:00 Pm</p>
                 </div>
             </div>
             <span className='line'/>

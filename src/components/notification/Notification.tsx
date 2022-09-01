@@ -50,6 +50,7 @@ export const Mid = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 200000;
 `
 
 export const NotificationWrapper = styled.div`
@@ -58,10 +59,10 @@ export const NotificationWrapper = styled.div`
   background: #ffffff;
   width: 54%;
   color: #000000;
-  z-index: 201;
   border-radius: 12px;
   padding: 2rem;
   text-align: center;
+  z-index: 2000;
 
   form {
     position: relative;

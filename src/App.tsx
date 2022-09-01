@@ -5,7 +5,7 @@ import {Memo} from "./components/notification/Notification";
 import {Home} from "./views/Home";
 import {Basket} from "./views/basket/Cart";
 import {Layout} from "./layouts/Layout";
-import {Login} from "./views/login/Login";
+import {Contact} from "./views/Contact/Contact";
 
 function App() {
     return (
@@ -15,7 +15,7 @@ function App() {
                 <Routes>
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/basket'} element={<Basket/>}/>
-                    <Route path={'/login'} element={<Login/>}/>
+                    <Route path={'/contact'} element={<Contact/>}/>
                 </Routes>
             </Layout>
         </Container>

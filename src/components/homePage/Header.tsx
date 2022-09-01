@@ -65,12 +65,9 @@ export const Header = styled.header`
         border-radius: 50%;
         bottom: 5px;
         left: 50%;
+        transform: translate(-50%, 50%);
         background-color: #000000;
       }
-    }
-
-    a:last-child {
-      padding: 1rem 0 1rem 1rem;
     }
   }
 

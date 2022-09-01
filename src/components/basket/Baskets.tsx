@@ -1,14 +1,16 @@
 import styled from "styled-components"
 import {TotalPrice} from "./TotalPrice";
 import {SingleBasket} from "./SingleBasket";
-import {Empty} from "./Empty";
 
 export const Baskets = () => {
     let test = false;
     return (
         <BasketsWrapper>
             <WrapperComponent>
-                {test ? <SingleBasket/> : <Empty/>}
+                {/*{test ? <SingleBasket/> : <Empty/>}*/}
+                <SingleBasket/>
+                <SingleBasket/>
+                <SingleBasket/>
             </WrapperComponent>
             <aside>
                 <TotalPrice/>
@@ -28,5 +30,5 @@ export const WrapperComponent = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 `
